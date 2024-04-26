@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.App-header.thunderstorm {
+  background-image: url("./Image/ths.jpg");
+  color: white;
+}
+
+.search {
+  position: absolute;
+  top: 20%; 
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: rgb(0, 33, 65); 
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.data{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.Icons{
+  color: black;
+  position: absolute;
+  top: 30%; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.datetime {
+  color: rgb(255, 255, 255); 
+  font-size: 16px; 
+  font-weight: bold; 
+  margin-top: 10px; 
+  position: absolute;
+  top: 85%; 
+  left: 20%; 
+  transform: translateX(-50%); 
+  padding: 10px;
+  border-radius: 5px;
+  font-size: calc(10px + 2vmin);
+}
+
+.search input[type="text"] {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.App-header.clear_day {
+  background-image: url("./Image/clear_day.jpg");
+}
+
+.App-header.cloudy {
+  background-image: url("./Image/smoke.webp");
+  color: white;
+}
+
+.App-header.rain {
+  background-image: url("./Image/Rain.jpg");
+  color: rgb(0, 0, 0);
+}
+
+.App-header.snow {
+  background-image: url("./Image/snow.jpg");
+}
+
+.App-header.wind {
+  background-image: url("./Image/wind.jpg");
+  color: rgb(255, 255, 255);
+}
+
+.App-header.dust {
+  background-image: url("./Image/dust.jpg");
+}
+
+.App-header.sleet {
+  background-image: url("./Image/drizzle.jpg");
+}
+
+.App-header.fog {
+  background-image: url("./Image/fog.jpg");
+}
+
+.App-header.tornado {
+  background-image: url("./Image/smoke.webp");
+  color: white;
+}
+
+
+.App-header.default {
+  background-image: url("./Image/smoke.webp");
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  padding: 8px;
+}
+
+input {
+  padding: 8px;
+  outline: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .search {
+    
+      display: flex;
+    
+    }
+
+    .datetime {
+      font-size: 15px; 
+      position: absolute;
+      top: 85%; 
+      left: 50%; 
+     
+    }
+
+   
+  }
